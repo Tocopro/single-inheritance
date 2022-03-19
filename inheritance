@@ -1,0 +1,35 @@
+
+
+#include <iostream>
+#include <list>
+using namespace std;
+
+
+class Beverage
+{
+    public:
+    void drinks()
+    {
+        cout << "All Drinks are available " << endl;
+
+    }
+};
+class Coffee: public Beverage
+{
+    public:
+    void mocha()
+    {
+        cout << " Mocha tastes the Best " ;
+    }
+
+
+};
+int main()
+{
+    Coffee c;
+    c.drinks();
+    c.mocha();
+
+    return 0;
+
+}
